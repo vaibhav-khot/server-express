@@ -85,12 +85,12 @@
                     "id": "IndiaState1",
                     "cities": [
                         {
-                            "name": "",
+                            "name": "City 9",
                             "id": "IState1City1",
                             "area": "12345 sqkm"
                         },
                         {
-                            "name": "I City 2",
+                            "name": "City 10",
                             "id": "IState1City2",
                             "area": "12345 sqkm"
                         }
@@ -107,7 +107,7 @@
                     "id": "chinaState1",
                     "cities": [
                         {
-                            "name": "C City 1",
+                            "name": "City 11",
                             "id": "CState1City1",
                             "area": "12345 sqkm"
                         }

@@ -24,6 +24,10 @@ countries_json= {
     for (var i = 0; i < data.country.length; i++) {
       countries_json.country.push(data.country[i].name);
     }
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
+// res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+// res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+// res.setHeader('Access-Control-Allow-Credentials', true);
     res.json(countries_json);
   });
 });
@@ -47,6 +51,7 @@ for (var i = 0; i < data.country.length; i++) {
     }
   }
 }
+res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
 res.json(state_json);
  });
 });
@@ -76,7 +81,7 @@ app.get('/:state', function(req, res) {
                 }
             }
         }
-
+res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
         res.json(city_json);
     });
 });
