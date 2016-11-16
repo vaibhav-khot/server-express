@@ -3,6 +3,7 @@
         {
             "name": "United States",
             "id": "usa",
+            "zip": "6",
             "states": [
                 {
                     "name": "State 1 USA",
@@ -41,6 +42,7 @@
         {
             "name": "Australia",
             "id": "aus",
+            "zip": "5",
             "states": [
                 {
                     "name": "State 1 Australia",
@@ -79,6 +81,7 @@
         {
             "name": "India",
             "id": "ind",
+            "zip": "4",
             "states": [
                 {
                     "name": "State 1 India",
@@ -101,6 +104,7 @@
         {
             "name": "China",
             "id": "chn",
+            "zip": "3",
             "states": [
                 {
                     "name": "State 1 China",

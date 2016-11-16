@@ -11,7 +11,8 @@ app.get('/', function(req, res){
 app.get('/country',function (req,res) {
   console.log("country/");
 countries_json= {
-    country: []
+    country: [],
+    zip:[]
   };
 
   fs.readFile('./country.json', "utf-8", (err, data) => {
@@ -23,6 +24,7 @@ countries_json= {
 
     for (var i = 0; i < data.country.length; i++) {
       countries_json.country.push(data.country[i].name);
+        countries_json.zip.push(data.country[i].zip);
     }
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
 // res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -51,7 +53,7 @@ for (var i = 0; i < data.country.length; i++) {
     }
   }
 }
-res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
+res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');//10.0.100.221
 res.json(state_json);
  });
 });
